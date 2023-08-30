@@ -62,3 +62,17 @@ yc compute instance create \
    --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
    --metadata-from-file='user-data=cloud-init.yaml'
 ```
+#HOMEWORK 5
+
+Install and configure packer
+Create pkr.hcl & json config files
+Create and configure variables files
+Create autodeploy template and YC script
+
+How to run:
+```
+packer build -var-file=./variables.pkr.hcl ./immutable.pkr.hcl
+```
+```
+./create-reddit-vm.sh
+```
