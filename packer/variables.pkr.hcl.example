@@ -1,0 +1,6 @@
+folder_id = "folder ID"
+source_id = "Image name"
+keyfile = "/path/to/key.json"
+username = "ubuntu"
+ipv4_nat = "true"
+zone = "zone for deploy"
