@@ -1,8 +1,0 @@
-{
-"folder_id" :"b1gcbl2kck12l0nocssc",
-"source_id" : "ubuntu-1604-lts",
-"keyfile" : "/home/lipin.md/key.json",
-"username" : "ubuntu",
-"ipv4_nat" : "true",
-"zone" : "ru-central1-a"
-}
