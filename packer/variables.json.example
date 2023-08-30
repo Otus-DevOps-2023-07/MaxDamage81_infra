@@ -1,7 +1,7 @@
 {
 "folder_id" :"FolderID",
 "source_id" : "Source",
-"keyfile" : "/path/to/key.json",
+"keyfile" : "samplekey.json",
 "username" : "ubuntu",
 "ipv4_nat" : "true",
 "zone" : "zone to deploy"
