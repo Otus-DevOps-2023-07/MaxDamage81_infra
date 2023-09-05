@@ -1,3 +1,8 @@
 #Ignoring files
 packer/variables.pkr.hcl
 packer/variables.json
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+.terraform/
