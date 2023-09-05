@@ -76,3 +76,14 @@ packer build -var-file=./variables.pkr.hcl ./immutable.pkr.hcl
 ```
 ./create-reddit-vm.sh
 ```
+#HOMEWORK 6
+-
+-Install and configure terraform
+-Create service account for terraform
+-Create main.tf file with instance data
+-Create tfvars file for variables
+-
+--Advanced tasks:
+-Create lb.tf file with LB data
+-Edit output.tf file for comfortable output IPs
+-Check result (trying stop puma on one of instance) - OK
