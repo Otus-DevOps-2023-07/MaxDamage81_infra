@@ -87,3 +87,14 @@ packer build -var-file=./variables.pkr.hcl ./immutable.pkr.hcl
 -Create lb.tf file with LB data
 -Edit output.tf file for comfortable output IPs
 -Check result (trying stop puma on one of instance) - OK
+
+#HOMEWORK 7
+
+- Create new packer image
+- Create APP and DB modules
+- Create stage and prod env.
+
+Advanced tasks:
+- Create S3 storage
+- Configure backend to S3
+- Check tfstate file in S3 storage

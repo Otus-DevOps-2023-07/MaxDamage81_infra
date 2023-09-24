@@ -1,0 +1,28 @@
+{
+    "builders": [
+      {
+                "type": "yandex",
+                "service_account_key_file": "{{user `service_account_key_file`}}",
+                "folder_id": "{{user `folder_id`}}",
+                "source_image_family": "{{user `source_id`}}",
+                "image_name": "reddit-db-base-${formatdate(\"MM-DD-YYYY\", timestamp())}",
+                "image_family": "reddit-db-base",
+                "ssh_username": "{{user `username`}}",
+                "platform_id": "standard-v1",
+                "use_ipv4_nat": true
+      }
+    ],
+    "provisioners": [
+      {
+        "type": "shell",
+        "inline": [
+            "sudo apt-get update -y",
+            "echo Waiting for apt-get to finish...",
+            "a=1; while [ -n \"$(pgrep apt-get)\" ]; do echo $a; sleep 1s; a=$(expr $a + 1); done",
+            "echo Done.",
+            "sudo apt-get install -y mongodb",
+            "sudo systemctl enable mongodb"
+        ]
+      }
+    ]
+  }
