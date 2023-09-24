@@ -2,7 +2,7 @@
     "builders": [
       {
                 "type": "yandex",
-                "service_account_key_file": "{{user `service_account_key_file`}}",
+                "service_account_key_file": "{{user `keyfile`}}",
                 "folder_id": "{{user `folder_id`}}",
                 "source_image_family": "{{user `source_id`}}",
                 "image_name": "reddit-db-base-${formatdate(\"MM-DD-YYYY\", timestamp())}",
