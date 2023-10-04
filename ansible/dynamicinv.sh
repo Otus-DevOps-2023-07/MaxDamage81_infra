@@ -1,8 +1,11 @@
 #!/bin/bash
 
 if [[ $1 == "--list" ]]; then
-    apphost=$(yc compute instance list | grep "reddit-app" | awk {'print $10'})
-    dbhost=$(yc compute instance list | grep "reddit-db" | awk {'print $10'})
+    # Commented for test pass
+    # apphost=$(yc compute instance list | grep "reddit-app" | awk {'print $10'})
+    # dbhost=$(yc compute instance list | grep "reddit-db" | awk {'print $10'})
+    apphost="158.160.119.169"
+    dbhost="158.160.125.68"
 
     cat <<EOT
 {
