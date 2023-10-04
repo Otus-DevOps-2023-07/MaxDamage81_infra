@@ -98,3 +98,12 @@ Advanced tasks:
 - Create S3 storage
 - Configure backend to S3
 - Check tfstate file in S3 storage
+
+#HOMEWORK 8
+
+- intall and configure ansible
+- clone reddit repo
+- command "ansible app -m command -a 'rm -rf ~/reddit'" is removed git dirrectory ; Playbook "clone.yml" create clone reddit repo again
+Advanced tasks:
+- create dynamic inventory file (dynamicinv.sh)
+- configure ansible to work with him
